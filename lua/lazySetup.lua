@@ -17,7 +17,7 @@ return {
     config = get_setup("conform"),
   },
   {
-  "evancodes10/NeoVim-Bitfields",
+  "evancodes10/bitfield.nvim",
   build  = "make -C c/",
   ft     = { "c", "cpp" },
   config = function()
