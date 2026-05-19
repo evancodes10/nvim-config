@@ -16,6 +16,13 @@ return {
     cmd = { "ConformInfo" },
     config = get_setup("conform"),
   },
+  {
+  "nvim-tree/nvim-tree.lua",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
+  config = function()
+    require("nvim-tree").setup()
+  end,
+  },
   { "mbbill/undotree" },
   { "LudoPinelli/comment-box.nvim", event = "VeryLazy" },
   { "numToStr/Comment.nvim", lazy = false, config = get_setup("Comment") },
