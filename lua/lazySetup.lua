@@ -17,8 +17,9 @@ return {
     config = get_setup("conform"),
   },
   {
-  dir = "/Users/evancodes10/BitfieldNVIM",
-  ft  = { "c", "cpp" },
+  "evancodes10/NeoVim-Bitfields",
+  build  = "make -C c/",
+  ft     = { "c", "cpp" },
   config = function()
     require("bitfield").setup()
   end,
