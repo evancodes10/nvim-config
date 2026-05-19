@@ -21,17 +21,16 @@ return {
   build  = "make -C c/",
   ft     = { "c", "cpp" },
   config = function()
-    require("bitfield").setup()
+    require("bitfield").setup({
+      keymap = "zi",
+    })
   end,
   },
   {
-  "evancodes10/NeoVim-Bitfields",
-  build  = "make -C c/",
-  ft     = { "c", "cpp" },
+  "nvim-tree/nvim-tree.lua",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
-    require("bitfield").setup({
-      keymap = "ml",  -- now <leader>ml
-    })
+    require("nvim-tree").setup()
   end,
   },
   { "mbbill/undotree" },
