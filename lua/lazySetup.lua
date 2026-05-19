@@ -17,6 +17,13 @@ return {
     config = get_setup("conform"),
   },
   {
+  dir = "/path/to/bitfield.nvim",   -- absolute path to the folder
+  ft  = { "c", "cpp" },
+  config = function()
+    require("bitfield").setup()
+  end,
+  },
+  {
   "nvim-tree/nvim-tree.lua",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
