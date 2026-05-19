@@ -17,7 +17,7 @@ return {
     config = get_setup("conform"),
   },
   {
-  dir = "/path/to/bitfield.nvim",   -- absolute path to the folder
+  dir = "/Users/evancodes10/BitfieldNVIM",
   ft  = { "c", "cpp" },
   config = function()
     require("bitfield").setup()
