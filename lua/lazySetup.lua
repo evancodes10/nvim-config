@@ -25,10 +25,13 @@ return {
   end,
   },
   {
-  "nvim-tree/nvim-tree.lua",
-  dependencies = { "nvim-tree/nvim-web-devicons" },
+  "evancodes10/NeoVim-Bitfields",
+  build  = "make -C c/",
+  ft     = { "c", "cpp" },
   config = function()
-    require("nvim-tree").setup()
+    require("bitfield").setup({
+      keymap = "ml",  -- now <leader>ml
+    })
   end,
   },
   { "mbbill/undotree" },
